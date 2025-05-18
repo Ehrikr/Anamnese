@@ -128,11 +128,11 @@ A interface do jogo busca ser imersiva e focada na narrativa, com as opções de
 
 ### Tela de Narrativa e Diálogo:
 ![Exemplo da tela de narrativa do jogo Anamnese](images/narrativa.png)
-*Descrição da cena e diálogo com o paciente/NPCs, gerado pela IA Gemini.*
+<br>*Descrição da cena e diálogo com o paciente/NPCs, gerado pela IA Gemini.*
 
 ### Tela de Opções do Jogador:
 ![Exemplo da tela de opções de diálogo do jogo Anamnese](images/opcoes.png)
-*As 8 opções de ação/diálogo com tons distintos geradas pela IA para o jogador escolher.*
+<br>*As 8 opções de ação/diálogo com tons distintos geradas pela IA para o jogador escolher.*
 
 *(Outros elementos visuais como um fluxograma conceitual de decisões e exemplos de telas de "Fim de Plantão" bem-humoradas podem ser adicionados para enriquecer a apresentação.)*
 
