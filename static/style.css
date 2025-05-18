@@ -1,0 +1,103 @@
+/* static/style.css */
+body {
+    font-family: 'Courier New', Courier, monospace; /* Fonte estilo anos 80 / terminal */
+    background-color: #0D2A1F; /* Verde escuro de fundo */
+    color: #A0D4B4; /* Verde claro para texto */
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background-color: #061A12; /* Verde ainda mais escuro para o container */
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #2A5C44;
+    box-shadow: 0 0 15px rgba(160, 212, 180, 0.2);
+}
+
+h1, h2, h3 {
+    color: #E0F2E8; /* Verde bem clarinho para títulos */
+    border-bottom: 1px solid #2A5C44;
+    padding-bottom: 10px;
+}
+h1 { text-align: center; }
+
+#narrativa-container p {
+    margin-bottom: 1em;
+    white-space: pre-wrap; /* Preserva quebras de linha da narrativa */
+}
+
+#opcoes-cena-container button,
+.acoes-fixas-container button,
+#diagnostico-opcoes-container button,
+#btn-iniciar-personagem {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    background-color: #1A4A34; /* Verde médio para botões */
+    color: #E0F2E8;
+    border: 1px solid #2A5C44;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 1em;
+    text-align: left;
+}
+
+#opcoes-cena-container button:hover,
+.acoes-fixas-container button:hover,
+#diagnostico-opcoes-container button:hover,
+#btn-iniciar-personagem:hover {
+    background-color: #2A5C44; /* Verde um pouco mais claro no hover */
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    color: #A0D4B4;
+}
+input[type="text"], select {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #2A5C44;
+    border-radius: 4px;
+    background-color: #0D2A1F;
+    color: #E0F2E8;
+    font-family: inherit;
+}
+
+hr {
+    border: none;
+    border-top: 1px dashed #2A5C44;
+    margin: 20px 0;
+}
+
+.hidden { display: none; }
+.setup-active { display: block; }
+
+#status-jogador {
+    background-color: #0A2016;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    border: 1px solid #1A4A34;
+    font-size: 0.9em;
+    white-space: pre-wrap;
+}
+
+#desfecho-container {
+    background-color: #0A2016;
+    padding: 15px;
+    border: 1px solid #A0D4B4;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+#desfecho-container h3 {
+    color: #E0F2E8;
+}

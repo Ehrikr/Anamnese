@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anamnese - O Jogo</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Anamnese</h1>
+        <div id="status-jogador"></div>
+        <hr>
+
+        <div id="setup-jogo" class="setup-active">
+            <h2>Novo Jogo / Criação de Personagem</h2>
+            <label for="nome-jogador">Nome do Médico(a):</label>
+            <input type="text" id="nome-jogador" value="Dr. House"><br><br>
+            
+            <label for="classe-jogador">Classe:</label>
+            <select id="classe-jogador">
+                </select><br><br>
+
+            <label for="traco-jogador">Traço:</label>
+            <select id="traco-jogador">
+                </select><br><br>
+
+            <button id="btn-iniciar-personagem">Criar Personagem e Iniciar Jogo</button>
+            <div id="setup-feedback"></div>
+        </div>
+
+        <div id="jogo-principal" class="hidden">
+            <h2 id="titulo-caso">Carregando caso...</h2>
+            <div id="narrativa-container">
+                <p>Aguarde...</p>
+            </div>
+            <hr>
+            <div id="opcoes-cena-container">
+                <h3>Escolha uma Ação/Diálogo para a Cena:</h3>
+                </div>
+            <hr>
+            <div id="acoes-fixas-container">
+                <h3>Outras Ações:</h3>
+                <button class="acao-fixa" data-tipo="hipotese">Adicionar/Ver Hipóteses</button>
+                <button class="acao-fixa" data-tipo="dica_howser">Dica Dr. Howser</button>
+                <button class="acao-fixa" data-tipo="dica_meridee">Diário Dra. Meridee</button>
+                <button class="acao-fixa" data-tipo="desenhar" id="btn-desenhar" style="display:none;">Desenhar Sintoma</button>
+                <button class="acao-fixa" data-tipo="resumo_mental">Organizar Pensamentos</button>
+                <button class="acao-fixa" data-tipo="diagnosticar">TENTAR DIAGNÓSTICO FINAL</button>
+            </div>
+            <div id="diagnostico-opcoes-container" class="hidden">
+                 <h3>Escolha o Diagnóstico Final:</h3>
+                 </div>
+        </div>
+        <div id="desfecho-container" class="hidden">
+            </div>
+
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
